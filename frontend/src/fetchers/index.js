@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-const URL = process.env.SERVER_URL;
+const URL = process.env.REACT_APP_API_PATH;
 
 export const registerUser = async (userData) => {
     const response = await fetch(`${URL}/register`, {
