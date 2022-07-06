@@ -1,3 +1,8 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
+const URL = process.env.SERVER_URL;
+
 export const registerUser = async (userData) => {
     const response = await fetch(`${URL}/register`, {
       method: "POST",
